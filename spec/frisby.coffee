@@ -1,0 +1,15 @@
+frisby = require('frisby')
+
+describe "test", ->
+  frisby.create('test')
+    .get('http://www.google.co.uk/')
+    .expectStatus(404)
+    .toss()
+  frisby.create('test')
+    .get('http://news.bbc.co.uk/')
+    .expectStatus(200)
+    .toss()
+  frisby.create('test')
+    .get('http://www.yeah.co.uk/')
+    .expectStatus(502)
+    .toss()

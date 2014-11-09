@@ -1,0 +1,8 @@
+{
+  "name": "sandbox",
+  "version": "0.0.0",
+  "dependencies": {
+    "jasmine": "~2.0.4"
+  },
+  "devDependencies": {}
+}
